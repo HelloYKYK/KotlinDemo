@@ -14,7 +14,7 @@
         android:layout_marginStart="20dp"
         android:background="@android:drawable/list_selector_background"
         android:gravity="center"
-        android:text=" = "
+        android:text="="
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
@@ -26,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:background="@android:drawable/list_selector_background"
         android:gravity="center"
-        android:text=" - "
+        android:text="-"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toTopOf="@+id/textView15" />
@@ -38,7 +38,7 @@
         android:layout_marginStart="20dp"
         android:background="@android:drawable/list_selector_background"
         android:gravity="center"
-        android:text=" + "
+        android:text="+"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toTopOf="@+id/textView" />
@@ -50,7 +50,7 @@
         android:layout_marginStart="20dp"
         android:background="@android:drawable/list_selector_background"
         android:gravity="center"
-        android:text=" x "
+        android:text="x"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
@@ -62,7 +62,7 @@
         android:layout_marginStart="36dp"
         android:background="@android:drawable/list_selector_background"
         android:gravity="center"
-        android:text=" . "
+        android:text="."
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
@@ -188,20 +188,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:background="@android:drawable/list_selector_background"
-        android:hint="计算"
-        android:gravity="bottom"
-        android:id="@+id/tv_result"
-        android:layout_width="231dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView25"
@@ -218,4 +205,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:background="@android:drawable/list_selector_background"
+        android:hint="计算"
+        android:gravity="bottom"
+        android:id="@+id/tv_result"
+        android:layout_width="231dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

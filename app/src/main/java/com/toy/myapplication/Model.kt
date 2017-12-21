@@ -5,5 +5,5 @@ package com.toy.myapplication
  */
 var str = ""
 var result = 0.0
-var suanfa = "+"
+var operation = "+"
 
