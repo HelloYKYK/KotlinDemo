@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 var resultStr = result.toString()
                 resultStr = if (resultStr.endsWith(".0")) resultStr.replace(".0", "") else resultStr
                 tv_result.text = resultStr
-                str = ""
+                lastNumber = ""
                 result = 0.0
             }
             "+","-","x","AC" -> {
@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             else -> {
-                str += v.text
-                tv_result.text = str
+                lastNumber += v.text
+                tv_result.text = lastNumber
             }
         }
     }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun clearStatus(operator: String) {
         result = if (!tv_result.text.isEmpty()&&tv_result.text[0].isDigit()) tv_result.text.toString().toDouble() else 0.0
         tv_result.text = operator
-        str = ""
+        lastNumber = ""
     }
 
 
